@@ -1,0 +1,1 @@
+# personality_analyzer_supabase
