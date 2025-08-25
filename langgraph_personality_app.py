@@ -8,10 +8,8 @@ import streamlit as st
 
 # LangChain / LLMs
 # Prefer modern integration; fallback for older LangChain if needed.
-try:
-    from langchain_openai import ChatOpenAI  # modern path
-except Exception:
-    from langchain.chat_models import ChatOpenAI  # fallback
+from langchain_openai import ChatOpenAI  # modern path
+#from langchain.chat_models import ChatOpenAI  # fallback
 from langchain_core.prompts import ChatPromptTemplate
 from langchain_core.output_parsers import StrOutputParser
 from langchain_community.document_loaders import WebBaseLoader
