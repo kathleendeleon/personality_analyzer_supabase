@@ -47,7 +47,7 @@ st.caption("LangGraph orchestration • MBTI category routing • Optional Supab
 with st.sidebar:
     st.header("Input")
     mode = st.radio("Content source", ["Paste Text", "Web URL"])
-    model_name = st.selectbox("LLM model", ["gpt-5-nano", "gpt-4o-mini"], index=0)
+    model_name = st.selectbox("LLM model", ["gpt-5-nano", "gpt-4o-mini"], index=1)
 
     if model_name == "gpt-5-nano":
         temperature = 1.0
