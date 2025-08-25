@@ -406,9 +406,9 @@ st.markdown("**Notes**")
 st.markdown("""
 - **LangGraph** orchestrates conditional routing by MBTI category.
 - **LangChain** handles chunking, prompts, and URL loading.
-- MBTI Categories: 
-   **Analyst** (INTJ/INTP/ENTJ/ENTP)
-   **Diplomat** (INFJ/INFP/ENFJ/ENFP)
-   **Sentinel** (ISTJ/ISFJ/ESTJ/ESFJ) 
-   **Explorer** (ISTP/ISFP/ESTP/ESFP)
+- MBTI Categories: \n
+   **Analyst** (INTJ/INTP/ENTJ/ENTP),\n
+   **Diplomat** (INFJ/INFP/ENFJ/ENFP),\n
+   **Sentinel** (ISTJ/ISFJ/ESTJ/ESFJ),\n
+   **Explorer** (ISTP/ISFP/ESTP/ESFP),
 """)
