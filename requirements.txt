@@ -6,8 +6,7 @@ langchain==0.2.12
 langchain-core==0.2.28
 langchain-community==0.2.11
 langgraph==0.2.25
-#langchain-openai==0.1.20
-langchain-openai>=0.2.0
+langchain-openai==0.1.20
 
 # OpenAI SDK required by langchain-openai
 openai==1.40.6
