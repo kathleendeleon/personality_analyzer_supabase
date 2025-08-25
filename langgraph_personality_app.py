@@ -23,8 +23,15 @@ st.caption("LangGraph for orchestration + conditional routing to MBTI-category v
 with st.sidebar:
     st.header("Input")
     mode = st.radio("Content source", ["Paste Text", "Web URL"])
-    model_name = st.selectbox("LLM model", ["gpt-4o-mini", "gpt-4o", "gpt-4.1-mini"], index=0)
-    temperature = st.slider("Temperature", 0.0, 1.0, 0.2, 0.1)
+    model_name = st.selectbox("LLM model", ["gpt-5-nano", "gpt-4o-mini"], index=0)
+
+    if model_name == "gpt-5-nano":
+        temperature = 1.0
+        st.sidebar.caption("`gpt-5-nano` uses fixed temperature = 1.0")
+    else:
+        temperature = st.sidebar.slider("Temperature", 0.0, 1.2, 0.7, 0.1)
+    
+    #temperature = st.slider("Temperature", 0.0, 1.0, 0.2, 0.1)
     max_chars = st.number_input("Max characters", min_value=500, max_value=20000, value=4000, step=500)
     chunk_size = st.number_input("Chunk size", min_value=600, max_value=2400, value=1200, step=100)
     chunk_overlap = st.number_input("Chunk overlap", min_value=0, max_value=600, value=150, step=10)
