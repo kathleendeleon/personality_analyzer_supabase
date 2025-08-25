@@ -404,9 +404,11 @@ if run:
 st.markdown("---")
 st.markdown("**Notes**")
 st.markdown("""
-- **Secrets**: set OPENAI_API_KEY (required), and optionally SUPABASE_URL / SUPABASE_ANON_KEY, in Streamlit → Settings → Secrets.
 - **LangGraph** orchestrates conditional routing by MBTI category.
 - **LangChain** handles chunking, prompts, and URL loading.
-- MBTI Categories: **Analyst** (INTJ/INTP/ENTJ/ENTP), **Diplomat** (INFJ/INFP/ENFJ/ENFP),
-  **Sentinel** (ISTJ/ISFJ/ESTJ/ESFJ), **Explorer** (ISTP/ISFP/ESTP/ESFP).
+- MBTI Categories: 
+   **Analyst** (INTJ/INTP/ENTJ/ENTP)
+   **Diplomat** (INFJ/INFP/ENFJ/ENFP)
+   **Sentinel** (ISTJ/ISFJ/ESTJ/ESFJ) 
+   **Explorer** (ISTP/ISFP/ESTP/ESFP)
 """)
