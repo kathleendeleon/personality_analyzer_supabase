@@ -1,10 +1,26 @@
-streamlit>=1.36
-langgraph>=0.2.25
-langchain>=0.2.6
-langchain-core>=0.2.10
-langchain-openai>=0.1.8
-langchain-community>=0.2.6
-tiktoken>=0.7.0
-beautifulsoup4>=4.12.2
-requests>=2.31.0
-supabase>=2.5.0
+# Core
+streamlit==1.36.0
+
+# LangChain stack (tested together)
+langchain==0.2.12
+langchain-core==0.2.28
+langchain-community==0.2.11
+langgraph==0.2.25
+langchain-openai==0.1.20
+
+# OpenAI SDK required by langchain-openai
+openai==1.40.6
+
+# NLP / loaders
+tiktoken==0.7.0
+beautifulsoup4==4.12.3
+requests==2.32.3
+
+# LangGraph / typing deps
+pydantic==2.8.2
+pydantic-core==2.20.1
+networkx==3.3
+typing-extensions==4.12.2
+
+# Supabase client
+supabase==2.5.0
